@@ -70,6 +70,15 @@ function getMovieInfo(){
 
 function randomCommand(){
 
+  fs.readFile('./random.txt','utf8', function(err, data){
+	  if (err) throw err;
+
+	  var tempArgArray = data.split(',');
+	  command = tempArgArray[0];
+	  arg = tempArgArray[1];
+      liri();
+  });
+
 }
 
 
@@ -78,23 +87,28 @@ function randomCommand(){
 var command = process.argv[2];
 var arg = process.argv.slice(3,process.argv.length).join('+');
 
+liri();
 
-switch(command){
+function liri(){
 
-	case 'myTweets':
-		  getMyTweets();
-		  break;
+	switch(command){
 
-	case 'spotify-this-song':
-		  getSongInfo();	
-		  break;
+		case 'myTweets':
+			  getMyTweets();
+			  break;
 
-	case 'movie-this':
-		  getMovieInfo();
-	 	  break;
+		case 'spotify-this-song':
+			  getSongInfo();	
+			  break;
 
-	case 'do-what-it-says':
-		  randomCommand();
-		  break;
+		case 'movie-this':
+			  getMovieInfo();
+		 	  break;
+
+		case 'do-what-it-says':
+			  randomCommand();
+			  break;
+
+	}
 
 }
