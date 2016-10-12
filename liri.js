@@ -151,10 +151,16 @@ function liri(command,arg){
 		case 'do-what-it-says':
 			  randomCommand();
 			  break;
-		default:
-			 var output = 'Error: No such command. Try movie-this, myTweets or spotify-this-song'+'\n';
+		case  undefined:
+
+			 var output = 'Error: Please give a command after program name. Try movie-this, myTweets or spotify-this-song'+'\n';
 			 log(command,arg,output);
 			 break;
+
+		default :
+			 var output = 'Error: No such command. Try movie-this, myTweets or spotify-this-song'+'\n';
+			 log(command,arg,output);
+			 break;	
 	}
 }
 

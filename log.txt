@@ -10,3 +10,24 @@ Actors: Matthew Broderick, Jonathan Taylor Thomas, James Earl Jones, Jim Cumming
 Rotten Tomatoes Rating: 8.3
 Rotten Tomatoes URL: http://www.rottentomatoes.com/m/the_lion_king/
 ---------------------------------------------
+undefined 
+Error: No such command. Try movie-this, myTweets or spotify-this-song
+---------------------------------------------
+undefined 
+Error: No such command. Try movie-this, myTweets or spotify-this-song
+---------------------------------------------
+undefined 
+Error: No such command. Try movie-this, myTweets or spotify-this-song
+---------------------------------------------
+undefined 
+Error: No such command. Try movie-this, myTweets or spotify-this-song
+---------------------------------------------
+hello 
+Error: No such command. Try movie-this, myTweets or spotify-this-song
+---------------------------------------------
+hello 
+Error: No such command. Try movie-this, myTweets or spotify-this-song
+---------------------------------------------
+undefined 
+Error: Please give a command after program name. Try movie-this, myTweets or spotify-this-song
+---------------------------------------------
