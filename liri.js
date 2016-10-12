@@ -26,22 +26,23 @@ function getMyTweets(){
 	  }
 	});
 }
-//console.log(twitterKeys);
+
 
 function getSongInfo(){
 
 	arg += '&limit=1&offset=0';
 
 	spotify.search({ type: 'track', query: arg }, function(err, data) {
-    if ( err ) {
-        console.log('Error occurred: ' + err);
-        return;
-    }
- 
-    // Do something with 'data' 
+	    if ( err ) {
+	        return console.log('Error occurred: ' + err);
+	     }
 
-    console.log(JSON.stringify(data));
- });
+		console.log('Song Name: ',data.tracks.items[0].name);
+		console.log('Artists: ',data.tracks.items[0].artists[0].name);
+		console.log('Album: ',data.tracks.items[0].album.name);
+		console.log('Preview link: ',data.tracks.items[0].preview_url);
+
+ 	});
 }
  
 
@@ -81,7 +82,6 @@ var arg = process.argv.slice(3,process.argv.length).join('+');
 switch(command){
 
 	case 'myTweets':
-		 
 		  getMyTweets();
 		  break;
 
