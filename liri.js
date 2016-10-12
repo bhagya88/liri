@@ -47,6 +47,24 @@ function getSongInfo(){
 
 function getMovieInfo(){
 
+	request('http://www.omdbapi.com/?t='+arg+'&y=&plot=short&tomatoes=true&r=json','utf8',function(err,response,body){
+
+	if(err) {
+		return console.log('Error while getting data from omdb ' +err);
+	}
+    body = JSON.parse(body);
+    console.log("Title of the movie: ",body.Title);
+	console.log("Release Year : ",body.Year);
+	console.log("IMDB Rating : ",body.imdbRating);
+	console.log("Country of production: ",body.Country);
+	console.log("Language: ",body.Language);
+	console.log("Plot: ",body.Plot);
+	console.log("Actors: ",body.Actors);
+	console.log("Rotten Tomatoes Rating: ",body.tomatoRating);
+	console.log("Rotten Tomatoes URL: ",body.tomatoURL);
+
+ 	});
+
 }
 
 function randomCommand(){
@@ -58,7 +76,7 @@ function randomCommand(){
 
 var command = process.argv[2];
 var arg = process.argv.slice(3,process.argv.length).join('+');
-console.log('arg',arg);
+
 
 switch(command){
 
