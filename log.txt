@@ -1,63 +1,15 @@
-spotify-this-song i want it that way
-Song Name: I Want It That Way
-Artists: Backstreet Boys
-Album: The Hits--Chapter One
-Preview link: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6
+hello brother
+Error: No such command. Try movie-this, myTweets or spotify-this-song
+---------------------------------------------
+undefined 
+Error: No such command. Try movie-this, myTweets or spotify-this-song
 ---------------------------------------------
 myTweets 
 bhagya2016: Don't be scared be scared of call back hell, there is a way out I promise. Posted on: Tue Oct 11 17:48:21 +0000 2016
 bhagya2016: Javascript is so cool. First class functions, closures, prototypical inheritance ...so many cool features. Posted on: Tue Oct 11 17:47:00 +0000 2016
 ---------------------------------------------
-spotify-this-song "I Want it That Way"
-Song Name: I Want It That Way
-Artists: Backstreet Boys
-Album: The Hits--Chapter One
-Preview link: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6
----------------------------------------------
-spotify-this-song "I Want it That Way"
-Song Name: I Want It That Way
-Artists: Backstreet Boys
-Album: The Hits--Chapter One
-Preview link: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6
----------------------------------------------
-movie-this "lion king"
-Title of the movie: The Lion King
-Release Year : 1994
-IMDB Rating : 8.5
-Country of production:USA
-Language: English, Swahili, Xhosa, Zulu
-Plot: Lion cub and future king Simba searches for his identity. His eagerness to please others and penchant for testing his boundaries sometimes gets him into trouble.
-Actors: Matthew Broderick, Jonathan Taylor Thomas, James Earl Jones, Jim Cummings
-Rotten Tomatoes Rating: 8.3
-Rotten Tomatoes URL: http://www.rottentomatoes.com/m/the_lion_king/
----------------------------------------------
-movie-this lion king
-Title of the movie: The Lion King
-Release Year : 1994
-IMDB Rating : 8.5
-Country of production:USA
-Language: English, Swahili, Xhosa, Zulu
-Plot: Lion cub and future king Simba searches for his identity. His eagerness to please others and penchant for testing his boundaries sometimes gets him into trouble.
-Actors: Matthew Broderick, Jonathan Taylor Thomas, James Earl Jones, Jim Cummings
-Rotten Tomatoes Rating: 8.3
-Rotten Tomatoes URL: http://www.rottentomatoes.com/m/the_lion_king/
----------------------------------------------
-spotify-this-song i want it that way
-Song Name: I Want It That Way
-Artists: Backstreet Boys
-Album: The Hits--Chapter One
-Preview link: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6
----------------------------------------------
-do-what-it-says 
----------------------------------------------
-movie-this "lion king"
-Title of the movie: The Lion King
-Release Year : 1994
-IMDB Rating : 8.5
-Country of production:USA
-Language: English, Swahili, Xhosa, Zulu
-Plot: Lion cub and future king Simba searches for his identity. His eagerness to please others and penchant for testing his boundaries sometimes gets him into trouble.
-Actors: Matthew Broderick, Jonathan Taylor Thomas, James Earl Jones, Jim Cummings
-Rotten Tomatoes Rating: 8.3
-Rotten Tomatoes URL: http://www.rottentomatoes.com/m/the_lion_king/
+myTweets 
+bhagya2016: Don't be scared be scared of call back hell, there is a way out I promise. Posted on: Tue Oct 11 17:48:21 +0000 2016
+bhagya2016: Javascript is so cool. First class functions, closures, prototypical inheritance ...so many cool features. Posted on: Tue Oct 11 17:47:00 +0000 2016
+bhagya2016: First tweet:) More to follow. Posted on: Tue Oct 11 17:35:42 +0000 2016
 ---------------------------------------------
