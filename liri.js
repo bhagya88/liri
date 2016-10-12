@@ -1,50 +1,82 @@
 var fs = require('fs');
-//ggivar request = require('request');
+var request = require('request');
+var spotify = require('spotify');
+var Twitter = require('twitter');
 var twitterKeys = require('./keys.js').twitterKeys;
 
+
+function getMyTweets(){
+	 var client = new Twitter({
+	  consumer_key: twitterKeys.consumer_key,
+	  consumer_secret: twitterKeys.consumer_secret,
+	  access_token_key: twitterKeys.access_token_key,
+	  access_token_secret: twitterKeys.access_token_secret 
+	});
+	 
+	var params = {screen_name: 'bhagya2016', count:2};
+
+	client.get('statuses/user_timeline', params, function(error, tweets, response) {
+
+	  
+	  if (!error) {
+	    tweets.forEach(function(tweet){
+	    	console.log("bhagya2016: " + tweet.text+" Posted on: "+tweet.created_at);
+	    });
+
+	  }
+	});
+}
 //console.log(twitterKeys);
 
-var Twitter = require('twitter');
+function getSongInfo(){
+
+	arg += '&limit=1&offset=0';
+
+	spotify.search({ type: 'track', query: arg }, function(err, data) {
+    if ( err ) {
+        console.log('Error occurred: ' + err);
+        return;
+    }
  
-var client = new Twitter({
-  consumer_key: twitterKeys.consumer_key,
-  consumer_secret: twitterKeys.consumer_secret,
-  access_token_key: twitterKeys.access_token_key,
-  access_token_secret: twitterKeys.access_token_secret 
-});
+    // Do something with 'data' 
+
+    console.log(JSON.stringify(data));
+ });
+}
  
-var params = {screen_name: 'bhagya2016', count:2};
 
-client.get('statuses/user_timeline', params, function(error, tweets, response) {
+function getMovieInfo(){
 
-  
-  if (!error) {
-    tweets.forEach(function(tweet){
-    	console.log("bhagya2016: " + tweet.text+" posted on "+tweet.created_at);
-    });
+}
 
-  }
-});
+function randomCommand(){
 
-// var command = process.argv[2];
+}
 
-// switch(command){
 
-// 	case 'myTweets':
-// 		  request('https://api.twitter.com/1.1/statuses/user_timeline.json')
 
-// 		  break;
 
-// 	case 'spotify-this-song':
+var command = process.argv[2];
+var arg = process.argv.slice(3,process.argv.length).join('+');
+console.log('arg',arg);
 
-// 		  break;
+switch(command){
 
-// 	case 'movie-this':
+	case 'myTweets':
+		 
+		  getMyTweets();
+		  break;
 
-// 	 	  break;
+	case 'spotify-this-song':
+		  getSongInfo();	
+		  break;
 
-// 	case 'do-what-it-says':
+	case 'movie-this':
+		  getMovieInfo();
+	 	  break;
 
-// 		  break;
+	case 'do-what-it-says':
+		  randomCommand();
+		  break;
 
-// }
+}
