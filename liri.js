@@ -107,22 +107,23 @@ function randomCommand(){
       liri(command, arg);
   });
 
-  log('do-what-it-says',null,'');
+  log('do-what-it-says','','');
 
 }
 
 // prints output to console and also log input and output
-function log(command,argument,output){
+function log(command,arg,output){
 	var str = '';
-	var arg;
-
-	(argument) ? arg = argument: arg ='';
 	
-	console.log(output);
+	if(output){	
+		console.log(output);
+    }
 	// str  has command, argument,also output
 	str += command+' '+arg+'\n';
 	str += output;
-	str += '---------------------------------------------'+'\n';
+	if(output){
+		str += '---------------------------------------------'+'\n';
+	}
 	fs.appendFile('./log.txt',str, function(err,data){
 		if(err) return console.log(err);
 		});
@@ -130,20 +131,10 @@ function log(command,argument,output){
 
 
 
-
-
-// calling the main function
-liri();
-
 // main function which reads command and delegates to other functions
-function liri(cmd,argument){
+function liri(command,arg){
 
-	var command,arg;
-
-	(cmd) ? command = cmd : command = process.argv[2];
-	(argument) ? arg = argument:  arg= process.argv.slice(3,process.argv.length).join(' ');
-	
-	switch(command){
+		switch(command){
 
 		case 'myTweets':
 			  getMyTweets();
@@ -166,3 +157,7 @@ function liri(cmd,argument){
 			 break;
 	}
 }
+
+
+// calling the main function 
+liri(process.argv[2], process.argv.slice(3,process.argv.length).join(' '));
