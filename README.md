@@ -66,7 +66,7 @@ liri.js can take in one of the following commands:
 4. `node liri.js do-what-it-says`
 LIRI will take the text inside of random.txt and then use it to call one of LIRI's commands.
 
-5. In addition to logging the data to your terminal/bash window, output the data to a .txt file called `log.txt`.
+5. In addition to logging the data to the terminal/bash window, it also outputs the data to a .txt file called `log.txt`.
 
 6. It also appends each command you run to the `log.txt` file. 
 
