@@ -15,9 +15,14 @@
     "song",
     "info",
     "movie",
-    "info"
+    "info",
+    "request",
+    "readline",
+    "twitter",
+    "spotify",
+    "omdb"
   ],
-  "author": "bhagya",
+  "author": "Bhagya",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/bhagya88/liri-node-app/issues"

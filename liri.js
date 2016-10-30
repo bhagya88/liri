@@ -39,7 +39,7 @@ function getMyTweets(){
 	
 }
 
-
+// makes call to spotify API to fetch data
 function getSongInfo(songName){
 	var song;
 	// if song name not available set it to a default
@@ -64,6 +64,7 @@ function getSongInfo(songName){
 }
  
 
+//makes call to OMDb API to fetch data
 function getMovieInfo(movieName){
 
 	var movie;
@@ -121,9 +122,11 @@ function log(command,arg,output){
 	// str  has command, argument,also output
 	str += command+' '+arg+'\n';
 	str += output;
+
 	if(output){
 		str += '---------------------------------------------'+'\n';
 	}
+	
 	fs.appendFile('./log.txt',str, function(err,data){
 		if(err) return console.log(err);
 		});
