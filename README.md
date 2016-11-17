@@ -19,7 +19,7 @@ LIRI is like iPhone's SIRI. It is a command line node app that takes in paramete
 
 ### Solutions found
 * Reading the documentation for the APIs helped figure out how to use them.
-* Creating a function which logs the command into a file and calling that function after each command is run helped solve the problem.
+* Creating a function which logs the command into a file and calling that function after each command is run, helped solve the problem.
 
 ### How it works
 
