@@ -23,15 +23,15 @@ LIRI is like iPhone's SIRI. It is a command line node app that takes in paramete
 
 ### How it works
 
-liri can take in one of the following commands:
-my-tweets
-spotify-this-song
-movie-this
-do-what-it-says
+liridy can take in one of the following commands:
+	my-tweets
+	spotify-this-song
+	movie-this
+	do-what-it-says
 
 1. `node liri my-tweets`	
 
-* This will show your last 20 tweets and when they were created at in your terminal/bash window.
+	* This will show your last 20 tweets and when they were created at in your terminal/bash window.
 
 
 2. `node liri.js spotify-this-song '<song name here>'`
