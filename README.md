@@ -4,36 +4,35 @@ LIRI is like iPhone's SIRI. It is a command line node app that takes in paramete
 ### Demo
 
 ### Technologies used
- 
-	* Node.js
-
-	* Request npm module
-
-	* Readline npm module
+* Node.js
+* Request npm module
+* Readline npm module
 
 ### APIs used
-	
-	* Twitter API
+* Twitter API
+* Spotify API
+* OMDB API
 
-	* Spotify API
+### Challenges faced
+* How to use the twitter, Spotify and OMDB APIs?
+* How to log the commands to a file?
 
-	* OMDB API
+### Solutions found
+* Reading the documentation for the APIs helped figure out how to use them.
+* Creating a function which logs the command into a file and calling that function after each command is run helped solve the problem.
 
 ### How it works
 
 liri.js can take in one of the following commands:
+* `my-tweets`
+* `spotify-this-song`
+* `movie-this`
+* `do-what-it-says`
 
-	* `my-tweets`
+1. `node liri.js my-tweets`	
 
-	* `spotify-this-song`
+* This will show your last 20 tweets and when they were created at in your terminal/bash window.
 
-	* `movie-this`
-
-	* `do-what-it-says`
-
-1. `node liri.js my-tweets`
-		
-	* This will show your last 20 tweets and when they were created at in your terminal/bash window.
 
 2. `node liri.js spotify-this-song '<song name here>'`
 
