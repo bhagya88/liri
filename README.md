@@ -24,10 +24,10 @@ LIRI is like iPhone's SIRI. It is a command line node app that takes in paramete
 ### How it works
 
 liri.js can take in one of the following commands:
-* `my-tweets`
-* `spotify-this-song`
-* `movie-this`
-* `do-what-it-says`
+* my-tweets
+* spotify-this-song
+* movie-this
+* do-what-it-says
 
 1. `node liri.js my-tweets`	
 
