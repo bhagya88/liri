@@ -1,5 +1,7 @@
 # LIRI Bot
-LIRI is like iPhone's SIRI. It is a command line node app that takes in parameters and gives back data .
+
+### Overview
+LIRI is a Node.js console application which works like iPhone's SIRI. Some of the tasks it can do are fetching tweets from your twitter account, getting information of your favourite song from Spotify and getting information of your favourite movie from omdb.
 
 ### Demo
 
@@ -23,7 +25,7 @@ LIRI is like iPhone's SIRI. It is a command line node app that takes in paramete
 
 ### How it works
 
-liridy can take in one of the following commands:
+liri can take in one of the following commands:
 	`my-tweets`,
 	`spotify-this-song`,
 	`movie-this`,
